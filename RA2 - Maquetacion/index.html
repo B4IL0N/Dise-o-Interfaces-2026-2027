@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PZES Online | Tienda de Acuariofilia & Aquascaping</title>
+  <meta name="author" content="B4IL0N">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PZES Online - Tienda de Acuariofilia">
+  <meta property="og:description" content="Proyecto RA2 de Maquetación (DAW) - Sass, Bootstrap 5.3 y JavaScript Vanilla.">
+  <meta property="og:url" content="https://b4il0n.github.io/Dise-o-Interfaces-2026-2027/RA2%20Maquetacion/">
+  <meta property="og:image" content="https://b4il0n.github.io/Dise-o-Interfaces-2026-2027/RA2%20Maquetacion/assets/img/og-preview.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@B4IL0N">
+
+  <!-- Tipografía Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap local base -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Estilos compilados desde custom.scss -->
+  <link rel="stylesheet" href="css/custom.css">
+    <!-- Estilos compilados galeria ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR / HEADER ================= -->
+  <header class="header-pzes py-3 border-bottom shadow-sm">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-start">
+        
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none me-lg-4">
+          <img src="assets/img/pzesonlie-LOGO.svg" 
+               alt="Logo PZESOnline" 
+               class="logo-pzes logo-stroke-blanco ms-2" 
+               height="48">         
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link nav-link-pzes active" aria-current="page">INICIO</a></li>
+          <li><a href="#catalogo" class="nav-link nav-link-pzes">SHOP</a></li>
+          <li><a href="checkout.html" class="nav-link nav-link-pzes">CARRITO</a></li>
+          <li><a href="#contacto" class="nav-link nav-link-pzes">CONTACTO</a></li>
+          <li><a href="#contact-form" class="nav-link nav-link-pzes">MI CUENTA</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 gap-md-3">
+          <!-- Botón de Modo Oscuro nativo compatible con script.js -->
+          <button id="theme-toggle" type="button" class="btn btn-outline-dark btn-sm rounded-pill px-3">
+            Modo Oscuro
+          </button>
+
+          <form class="d-none d-md-block" role="search">
+            <input type="search" class="form-control form-control-sm" placeholder="Buscar productos..." aria-label="Buscar">
+          </form>
+
+          <div class="dropdown text-end">
+            <a href="#" class="d-block text-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/img/fotoPerfir.png" alt="Perfil" width="32" height="32" class="rounded-circle border border-white">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow">
+              <li><a class="dropdown-item" href="#contact-form">Iniciar sesión</a></li>
+              <li><a class="dropdown-item" href="#" id="abrirModal" class="fw-bold">Registro</a></li>
+              
+              <li><a class="dropdown-item" href="checkout.html">Ver carrito</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Ajustes</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+<main class="main-content py-4">
+    <div class="container">
+
+      <!-- FILTROS / CATEGORÍAS -->
+      <nav id="category-nav" class="d-flex align-items-center gap-2 overflow-x-auto pb-2 mb-4 scrollbar-none drag-scroll" aria-label="Categorías de productos">
+        <button type="button" class="btn btn-category btn-sm rounded-3 text-nowrap px-3"><i class="bi bi-water me-1"></i> Peces</button>
+        <button type="button" class="btn btn-category btn-sm rounded-3 text-nowrap px-3"><i class="bi bi-bug me-1"></i> Invertebrados</button>
+        <button type="button" class="btn btn-category btn-sm rounded-3 text-nowrap px-3"><i class="bi bi-tree me-1"></i> Plantas</button>
+        <button type="button" class="btn btn-category btn-sm rounded-3 text-nowrap px-3"><i class="bi bi-box me-1"></i> Acuarios</button>
+        <button type="button" class="btn btn-category btn-sm rounded-3 text-nowrap px-3"><i class="bi bi-gear me-1"></i> Filtros</button>
+        <button type="button" class="btn btn-category btn-sm rounded-3 text-nowrap px-3"><i class="bi bi-lightbulb me-1"></i> Iluminación</button>
+        <button type="button" class="btn btn-category btn-sm rounded-3 text-nowrap px-3"><i class="bi bi-gem me-1"></i> Hardscape</button>
+        <button type="button" class="btn btn-category btn-sm rounded-3 text-nowrap px-3"><i class="bi-wind me-1"></i> CO2</button>
+        <button type="button" class="btn btn-category btn-sm rounded-3 text-nowrap px-3"><i class="bi bi-droplet-half me-1"></i> Abonos</button>
+        <button type="button" class="btn btn-category btn-sm rounded-3 text-nowrap px-3"><i class="bi-layers-fill me-1"></i> Sustratos</button>
+      </nav>
+
+      <!-- HERO / BANNER PRINCIPAL (De 1257x80 en Figma) -->
+      <section class="banner-promocional rounded-3 p-4 mb-5 text-white d-flex align-items-center justify-content-between shadow-sm" aria-labelledby="banner-heading">
+        <div>
+          <span class="badge bg-dark mb-1">Especial Aquascaping 2026</span>
+          <h2 id="banner-heading" class="h4 fw-bold mb-0">Equipa tu acuario con la mejor tecnología LED y sustratos premium</h2>
+        </div>
+        <a href="#catalogo" class="btn btn-light btn-sm fw-semibold text-nowrap px-3 d-none d-sm-inline-block">Ver ofertas</a>
+      </section>
+
+      <!-- SECCIÓN: TENDENCIA -->
+      <section class="mb-5" aria-labelledby="tendencias-heading">
+        <header class="d-flex align-items-center gap-2 mb-3">
+          <h2 id="tendencias-heading" class="h4 fw-bold mb-0">Tendencia</h2>
+          <span class="badge rounded-pill bg-light text-dark border">🔥 Populares</span>
+        </header>
+
+        <ul class="list-unstyled d-flex gap-4 overflow-x-auto pb-3 text-center scrollbar-none mb-0">
+          <li class="flex-shrink-0">
+            <figure class="d-flex flex-column align-items-center mb-0">
+              <img src="assets/img/anubia.jpg" alt="Planta Anubia" class="rounded-circle mb-2 img-tendencia" width="76" height="76">
+              <figcaption class="small fw-medium">Anubia</figcaption>
+            </figure>
+          </li>
+
+          <li class="flex-shrink-0">
+            <figure class="d-flex flex-column align-items-center mb-0">
+              <img src="assets/img/bucephalandra.jpg" alt="Planta Bucephalandra" class="rounded-circle mb-2 img-tendencia" width="76" height="76">
+              <figcaption class="small fw-medium">Bucephalandra</figcaption>
+            </figure>
+          </li>
+
+          <li class="flex-shrink-0">
+            <figure class="d-flex flex-column align-items-center mb-0">
+              <img src="assets/img/betta_black.jpg" alt="Pez Betta Black" class="rounded-circle mb-2 img-tendencia" width="76" height="76">
+              <figcaption class="small fw-medium">Betta</figcaption>
+            </figure>
+          </li>
+
+          <li class="flex-shrink-0">
+            <figure class="d-flex flex-column align-items-center mb-0">
+              <img src="assets/img/Oase_2.jpg" alt="Filtro Oase" class="rounded-circle mb-2 img-tendencia" width="76" height="76">
+              <figcaption class="small fw-medium">Oase</figcaption>
+            </figure>
+          </li>
+          
+          <li class="flex-shrink-0">
+            <figure class="d-flex flex-column align-items-center mb-0">
+              <img src="assets/img/fluval_fx6.jpg" alt="Filtro Fluval FX6" class="rounded-circle mb-2 img-tendencia" width="76" height="76">
+              <figcaption class="small fw-medium">Fluval</figcaption>
+            </figure>
+          </li>
+
+          <li class="flex-shrink-0">
+            <figure class="d-flex flex-column align-items-center mb-0">
+              <img src="assets/img/Chihiros.jpg" alt="Pantalla Chihiros" class="rounded-circle mb-2 img-tendencia" width="76" height="76">
+              <figcaption class="small fw-medium">Chihiros</figcaption>
+            </figure>
+          </li>
+
+          <li class="flex-shrink-0">
+            <figure class="d-flex flex-column align-items-center mb-0">
+              <img src="assets/img/Kryoscape.jpg" alt="Urna Kryoscape" class="rounded-circle mb-2 img-tendencia" width="76" height="76">
+              <figcaption class="small fw-medium">Kryoscape</figcaption>
+            </figure>
+          </li>
+
+          <li class="flex-shrink-0">
+            <figure class="d-flex flex-column align-items-center mb-0">
+              <img src="assets/img/betta-media-luna.jpg" alt="Pez Betta Media Luna" class="rounded-circle mb-2 img-tendencia" width="76" height="76">
+              <figcaption class="small fw-medium">Betta</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SECCIÓN: TOP VENTAS -->
+      <section id="catalogo" class="mb-5" aria-labelledby="top-ventas-heading">
+        <header class="d-flex align-items-center justify-content-between mb-3">
+          <h2 id="top-ventas-heading" class="h4 fw-bold mb-0">Top ventas</h2>
+          <a href="checkout.html" class="text-dark small fw-semibold text-decoration-none">Ir al carrito &rarr;</a>
+        </header>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-7 g-3">
+          
+          <!-- Producto 1 -->
+          <div class="col">
+            <article class="card h-100 card-producto border-0 shadow-sm p-2 text-center" itemscope itemtype="https://schema.org/Product">
+              <img src="assets/img/Chihiros_wrgII.jpg" class="card-img-top rounded-2 img-card-prod mx-auto" alt="Pantalla LED Chihiros WRGB 2" itemprop="image">
+              <div class="card-body p-2 d-flex flex-column text-start">
+                <span class="text-body-secondary small" itemprop="brand">Chihiros</span>
+                <h3 class="h6 mb-1 text-truncate" itemprop="name">WRGB 2</h3>
+                <data value="129.99" class="fw-bold fs-6 mt-auto" itemprop="price">129,99€</data>
+                <a href="checkout.html" class="btn btn-dark btn-sm w-100 mt-2" aria-label="Comprar Chihiros WRGB 2">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col">
+            <article class="card h-100 card-producto border-0 shadow-sm p-2 text-center" itemscope itemtype="https://schema.org/Product">
+              <img src="assets/img/Kryoscape.jpg" class="card-img-top rounded-2 img-card-prod mx-auto" alt="Urna Aquascape Kryoscape 13L" itemprop="image">
+              <div class="card-body p-2 d-flex flex-column text-start">
+                <span class="text-body-secondary small" itemprop="brand">Kryoscape</span>
+                <h3 class="h6 mb-1 text-truncate" itemprop="name">Urna 13L</h3>
+                <data value="44.95" class="fw-bold fs-6 mt-auto" itemprop="price">44,95€</data>
+                <a href="checkout.html" class="btn btn-dark btn-sm w-100 mt-2" aria-label="Comprar Urna Kryoscape 13L">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col">
+            <article class="card h-100 card-producto border-0 shadow-sm p-2 text-center" itemscope itemtype="https://schema.org/Product">
+              <img src="assets/img/fluval_fx6.jpg" class="card-img-top rounded-2 img-card-prod mx-auto" alt="Filtro exterior Fluval FX6" itemprop="image">
+              <div class="card-body p-2 d-flex flex-column text-start">
+                <span class="text-body-secondary small" itemprop="brand">Fluval</span>
+                <h3 class="h6 mb-1 text-truncate" itemprop="name">FX6 Filtro</h3>
+                <data value="329.99" class="fw-bold fs-6 mt-auto" itemprop="price">329,99€</data>
+                <a href="checkout.html" class="btn btn-dark btn-sm w-100 mt-2" aria-label="Comprar Filtro Fluval FX6">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Producto 4 -->
+          <div class="col">
+            <article class="card h-100 card-producto border-0 shadow-sm p-2 text-center" itemscope itemtype="https://schema.org/Product">
+              <img src="assets/img/anubia.jpg" class="card-img-top rounded-2 img-card-prod mx-auto" alt="Maceta de planta viva Anubia" itemprop="image">
+              <div class="card-body p-2 d-flex flex-column text-start">
+                <span class="text-body-secondary small" itemprop="brand">Maceta</span>
+                <h3 class="h6 mb-1 text-truncate" itemprop="name">Anubia</h3>
+                <data value="4.99" class="fw-bold fs-6 mt-auto" itemprop="price">4,99€</data>
+                <a href="checkout.html" class="btn btn-dark btn-sm w-100 mt-2" aria-label="Comprar Maceta Anubia">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="col">
+            <article class="card h-100 card-producto border-0 shadow-sm p-2 text-center" itemscope itemtype="https://schema.org/Product">
+              <img src="assets/img/bucephalandra.jpg" class="card-img-top rounded-2 img-card-prod mx-auto" alt="Maceta de planta viva Bucephalandra" itemprop="image">
+              <div class="card-body p-2 d-flex flex-column text-start">
+                <span class="text-body-secondary small" itemprop="brand">Maceta</span>
+                <h3 class="h6 mb-1 text-truncate" itemprop="name">Bucephalandra</h3>
+                <data value="2.99" class="fw-bold fs-6 mt-auto" itemprop="price">2,99€</data>
+                <a href="checkout.html" class="btn btn-dark btn-sm w-100 mt-2" aria-label="Comprar Maceta Bucephalandra">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Producto 6 -->
+          <div class="col">
+            <article class="card h-100 card-producto border-0 shadow-sm p-2 text-center" itemscope itemtype="https://schema.org/Product">
+              <img src="assets/img/betta-cola-rosa.jpg" class="card-img-top rounded-2 img-card-prod mx-auto" alt="Pez Betta HalfMoon" itemprop="image">
+              <div class="card-body p-2 d-flex flex-column text-start">
+                <span class="text-body-secondary small" itemprop="brand">Betta</span>
+                <h3 class="h6 mb-1 text-truncate" itemprop="name">HalfMoon</h3>
+                <data value="29.99" class="fw-bold fs-6 mt-auto" itemprop="price">29,99€</data>
+                <a href="checkout.html" class="btn btn-dark btn-sm w-100 mt-2" aria-label="Comprar Pez Betta HalfMoon">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Producto 7 -->
+          <div class="col">
+            <article class="card h-100 card-producto border-0 shadow-sm p-2 text-center" itemscope itemtype="https://schema.org/Product">
+              <img src="assets/img/Oase_2.jpg" class="card-img-top rounded-2 img-card-prod mx-auto" alt="Filtro exterior Oase BioMaster 2" itemprop="image">
+              <div class="card-body p-2 d-flex flex-column text-start">
+                <span class="text-body-secondary small" itemprop="brand">Oase</span>
+                <h3 class="h6 mb-1 text-truncate" itemprop="name">BioMaster 2</h3>
+                <data value="129.99" class="fw-bold fs-6 mt-auto" itemprop="price">129,99€</data>
+                <a href="checkout.html" class="btn btn-dark btn-sm w-100 mt-2" aria-label="Comprar Filtro Oase BioMaster 2">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= FORMULARIO REQUERIDO ================= -->
+      <dialog id="miModal" class="border-0 rounded-3 p-0 shadow-lg col-11 col-md-8 col-lg-5">
+        <div class="card card-pzes-wrapper p-4 border-0">
+
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" id="cerrarModal" aria-label="Cerrar"></button>
+          </div>
+          <header class="text-center mb-4">
+            <h2 id="form-heading" class="h4 fw-bold mb-1">Acceso a Clientes / Contacto</h2>
+            <p class="text-body-secondary small">Inicia sesión o consúltanos cualquier duda</p>
+          </header>
+              <!-- id="contact-form" -->
+              <form id="contact-form" class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nombre completo:</label>
+                  <input type="text" id="name" class="form-control" required minlength="3" placeholder="Ej. Carlos García">
+                  <div class="invalid-feedback">El nombre debe tener al menos 3 caracteres.</div>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo electrónico:</label>
+                  <input type="email" id="email" class="form-control" required placeholder="correo@ejemplo.com">
+                  <div class="invalid-feedback">Por favor, introduce un email válido.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="pass" class="form-label">Contraseña / Código cliente:</label>
+                  <input type="password" id="pass" class="form-control" required minlength="6">
+                  <div class="invalid-feedback">Mínimo 6 caracteres requeridos.</div>
+                </div>
+                
+                <button type="submit" class="btn btn-pzes-checkout w-100 py-2">Enviar Formulario</button>
+              </form>
+        </div>
+      </dialog>
+
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-pzes pt-5 mt-auto">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-6 col-md-3">
+          <h3 class="fs-6 fw-bold">Categorías</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Acuarios Aquascaping</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Iluminación WRGB</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Filtración Oase & Fluval</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Plantas In-Vitro</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h3 class="fs-6 fw-bold">Atención al Cliente</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Envíos y entregas</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Garantía de peces vivos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <form>
+            <h3 class="fs-6 fw-bold">Boletín de novedades</h3>
+            <p class="text-body-secondary small">Suscríbete para recibir ofertas y novedades semanales.</p>
+            <div class="d-flex flex-column flex-sm-row gap-2">
+              <label for="newsletterEmail" class="visually-hidden">Correo electrónico</label>
+              <input id="newsletterEmail" type="email" class="form-control" placeholder="Dirección de email">
+              <button class="btn btn-dark" type="button">Suscribirme</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center py-3 my-4 border-top text-body-secondary small">
+        <p class="mb-0">© 2026 PzesOnline.com - 918816699 - Alcalá de Henares</p><p>Diseñado y maquetado por <a href="https://github.com/B4IL0N" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-pzes">B4IL0N</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts locales -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

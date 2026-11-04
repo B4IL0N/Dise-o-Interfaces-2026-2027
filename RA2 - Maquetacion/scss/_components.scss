@@ -1,0 +1,108 @@
+@import "variables";
+@import "mixins";
+
+html, body {
+  background-color: $pzes-primary;
+  color: $pzes-dark;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family-base;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+.header-pzes {
+  background-color: $pzes-header;
+  transition: background-color 0.3s ease;
+}
+
+.logo-pzes {
+  max-width: 140px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.logo-stroke-blanco {
+  filter: drop-shadow(1px 1px 0px #ffffff) 
+          drop-shadow(-1px -1px 0px #ffffff) 
+          drop-shadow(1px -1px 0px #ffffff) 
+          drop-shadow(-1px 1px 0px #ffffff)
+          drop-shadow(0px 3px 4px rgba(255, 255, 255, 0.5));
+  transition: filter 0.3s ease;
+}
+
+.nav-link-pzes {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: $pzes-dark;
+  padding: 0.5rem 0.75rem;
+  transition: $transition-base;
+  @include interactive-focus;
+
+  &:hover,
+  &.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+  }
+}
+
+// Banner promocional
+.banner-promocional {
+  background: linear-gradient(135deg, $pzes-dark 0%, #2e4a3d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// Avatares circulares de tendencias
+.img-tendencia {
+  object-fit: cover;
+  background-color: $pzes-header;
+  border: 2px solid $pzes-white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
+
+// Cards semánticas de producto
+.card-producto {
+  background-color: $pzes-white;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.card-pzes-wrapper {
+  background-color: $pzes-white;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.scrollbar-none {
+  @include scrollbar-hidden;
+}
+
+.drag-scroll {
+  cursor: grab;
+  user-select: none;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.footer-pzes {
+  background-color: $pzes-white;
+  border-top: 1px solid $pzes-border;
+}

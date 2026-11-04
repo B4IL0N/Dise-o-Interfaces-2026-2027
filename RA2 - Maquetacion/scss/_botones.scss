@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+
+.btn-pzes {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  transition: $transition-base;
+  @include interactive-focus;
+
+  &--dark {
+    background-color: $pzes-dark;
+    color: $pzes-white;
+    border: 1px solid $pzes-dark;
+
+    &:hover {
+      background-color: lighten($pzes-dark, 15%);
+      color: $pzes-white;
+    }
+  }
+
+  &--primary {
+    background-color: $pzes-header;
+    color: $pzes-white;
+    border: 1px solid $pzes-header;
+
+    &:hover {
+      background-color: darken($pzes-header, 10%);
+      color: $pzes-white;
+    }
+  }
+}
+
+// Botones de categorías superiores (Filtros)
+.btn-category {
+  background-color: $pzes-white;
+  color: $pzes-dark;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  transition: $transition-base;
+  @include interactive-focus;
+
+  &:hover,
+  &:focus {
+    background-color: $pzes-header;
+    border-color: $pzes-header;
+    color: $pzes-white;
+    box-shadow: 0 4px 10px rgba(101, 150, 125, 0.35);
+  }
+}

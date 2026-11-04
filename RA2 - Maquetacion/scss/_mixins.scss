@@ -1,0 +1,18 @@
+// Mixin para microinteracciones accesibles (evaluado en rúbrica)
+@mixin interactive-focus {
+  &:focus-visible {
+    outline: 2px solid $pzes-primary;
+    outline-offset: 2px;
+  }
+}
+
+// Mixin para scroll táctil sin barra visible
+@mixin scrollbar-hidden {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

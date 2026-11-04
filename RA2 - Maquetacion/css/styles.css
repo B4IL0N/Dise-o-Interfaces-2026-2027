@@ -1,0 +1,159 @@
+/* ==========================================================================
+   VARIABLES DE TEMA (Paleta extraída de Figma)
+   ========================================================================== */
+:root {
+  --pzes-bg: #75AC90;
+  --pzes-green-dark: #65967D;
+  --pzes-text-dark: #1A1A1A;
+  --pzes-border: #E6E6E6;
+  
+  /* Sobrescritura de tokens de Bootstrap */
+  --bs-primary: #1A1A1A;
+  --bs-primary-rgb: 26, 26, 26;
+  --bs-focus-ring-color: rgba(101, 150, 125, 0.4);
+}
+
+/* ==========================================================================
+   ESTRUCTURA GENERAL & TIPOGRAFÍA
+   ========================================================================== */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--pzes-bg);
+  color: var(--pzes-text-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+/* ==========================================================================
+   HEADER & NAVEGACIÓN
+   ========================================================================== */
+.header-pzes {
+  background-color: var(--pzes-green-dark);
+}
+
+.brand-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0px 3px 6px rgba(255, 255, 255, 0.35);
+  margin-bottom: 0;
+}
+
+.nav-link-pzes {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #1A1A1A;
+  padding: 0.5rem 0.75rem;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link-pzes:hover,
+.nav-link-pzes.active {
+  color: #E6E6E6;
+  border-bottom: 2px solid #000000;
+}
+
+/* ==========================================================================
+   TARJETAS & CHECKOUT (DESKTOP & MOBILE)
+   ========================================================================== */
+.card-pzes-wrapper {
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.item-thumb-box {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: var(--pzes-green-dark);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.btn-pzes-checkout {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #000000;
+  transition: background-color 0.2s ease;
+}
+
+.btn-pzes-checkout:hover {
+  background-color: #262626;
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer-pzes {
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--pzes-border);
+}
+
+.footer-bottom-bar {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (Ajustes específicos Desktop vs Mobile)
+   ========================================================================== */
+
+/* Versión Móvil (< 768px) */
+@media (max-width: 767.98px) {
+  body {
+    padding-bottom: 0;
+  }
+  
+  .card-pzes-wrapper {
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .brand-title {
+    font-size: 1.4rem;
+  }
+
+  .item-thumb-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .btn-pzes-checkout {
+    font-size: 1rem;
+    position: sticky;
+    bottom: 12px;
+    z-index: 1020;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Versión Escritorio (>= 992px) */
+@media (min-width: 992px) {
+  .checkout-summary-column {
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+.logo-stroke-blanco {
+  filter: 
+    drop-shadow( 1px  0px 0 #fff)
+    drop-shadow(-1px  0px 0 #fff)
+    drop-shadow( 0px  1px 0 #fff)
+    drop-shadow( 0px -1px 0 #fff);
+}

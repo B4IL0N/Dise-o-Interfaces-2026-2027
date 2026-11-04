@@ -1,0 +1,58 @@
+@import "variables";
+
+[data-bs-theme="dark"] {
+  background-color: $pzes-bg-dark;
+  color: $pzes-text-dark;
+
+  body {
+    background-color: $pzes-bg-dark;
+    color: $pzes-text-dark;
+  }
+
+  .header-pzes {
+    background-color: $pzes-header-dark;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-link-pzes {
+    color: $pzes-white;
+
+    &:hover,
+    &.active {
+      color: $pzes-primary;
+      border-bottom-color: $pzes-primary;
+    }
+  }
+
+  .card-producto,
+  .card-pzes-wrapper {
+    background-color: $pzes-card-dark;
+    color: $pzes-text-dark;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .btn-category {
+    background-color: $pzes-card-dark;
+    color: $pzes-text-dark;
+    border-color: rgba(255, 255, 255, 0.12);
+
+    &:hover,
+    &:focus {
+      background-color: $pzes-header;
+      border-color: $pzes-header;
+      color: $pzes-white;
+    }
+  }
+
+  .footer-pzes {
+    background-color: $pzes-header-dark;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #A0AEC0;
+  }
+
+  #theme-toggle {
+    border-color: $pzes-white;
+    color: $pzes-white;
+  }
+}
