@@ -13,7 +13,7 @@ Este documento recoge la auditoría legal, técnica y de atribución de todos lo
 
 ## 2. Archivos de Vídeo
 
-* **Nombre de archivo original:** [`pexels-19036689.mp4`](./media-bruto/video/pexels-19036689.mp4)
+* **Nombre de archivo original:** [`19036689-uhd_2160_3840_60fps.mp4`](./media-bruto/video/pexels-19036689.mp4)
 * **Nombre de archivo optimizado:** [`19036689-hd_720_1280_60fps.mp4`](./src/media/video/19036689-hd_720_1280_60fps.mp4)
 * **Fuente:** [Pexels - Pez Betta en Acuario](https://www.pexels.com/es-es/video/pez-acuario-beta-pescado-19036689/)
 * **Autor:** Pexels (ID: 19036689)
