@@ -4,8 +4,8 @@ Este documento recoge la auditoría legal, técnica y de atribución de todos lo
 
 ## 1. Archivos de Audio
 
-* **Nombre de archivo original:** [`768868_14799839-lq.mp3`](./media-bruto/audio/768868_14799839-lq.mp3)
-* **Nombre de archivo optimizado:** [`hero_betta_background.mp3`](./src/media/audio/hero_betta_background.mp3)
+* **Nombre de archivo original:** [`768868_14799839-lq.mp3`](./media_bruto/audio/768868_14799839-lq.mp3)
+* **Nombre de archivo optimizado:** [`hero_betta_background.mp3`](./assets/media/audio/hero_betta_background.mp3)
 * **Fuente:** [Freesound - fish_swim2](https://freesound.org/people/Rayo75/sounds/768868/)
 * **Autor:** Rayo75 ([Perfil](https://freesound.org/people/Rayo75/))
 * **Licencia:** [Creative Commons 0 (CC0 1.0 Universal - Dominio Público)](https://creativecommons.org/publicdomain/zero/1.0/)
@@ -13,8 +13,8 @@ Este documento recoge la auditoría legal, técnica y de atribución de todos lo
 
 ## 2. Archivos de Vídeo
 
-* **Nombre de archivo original:** [`19036689-uhd_2160_3840_60fps.mp4`](./media-bruto/video/pexels-19036689.mp4)
-* **Nombre de archivo optimizado:** [`19036689-hd_720_1280_60fps.mp4`](./src/media/video/19036689-hd_720_1280_60fps.mp4)
+* **Nombre de archivo original:** [`19036689-uhd_2160_3840_60fps.mp4`](./media_bruto/video/19036689-uhd_2160_3840_60fps.mp4)
+* **Nombre de archivo optimizado:** [`19036689-hd_720_1280_60fps.mp4`](./assets/media/video/19036689-hd_720_1280_60fps.mp4)
 * **Fuente:** [Pexels - Pez Betta en Acuario](https://www.pexels.com/es-es/video/pez-acuario-beta-pescado-19036689/)
 * **Autor:** Pexels (ID: 19036689)
 * **Licencia:** [Licencia de Contenido Pexels](https://www.pexels.com/es-es/license/)
@@ -24,16 +24,16 @@ Este documento recoge la auditoría legal, técnica y de atribución de todos lo
 
 ### Fotografía 1: Dos peces betta siameses
 
-* **Archivo original:** [`worachat-sodsri-nCz_ZgnbtaE-unsplash.jpg`](./media-bruto/img/worachat-sodsri-nCz_ZgnbtaE-unsplash.jpg)
-* **Archivo optimizado:** [`betta_pair.webp`](./src/media/img/betta_pair.webp)
+* **Archivo original:** [`worachat-sodsri-nCz_ZgnbtaE-unsplash.jpg`](./media_bruto/img/worachat-sodsri-nCz_ZgnbtaE-unsplash.jpg)
+* **Archivo optimizado:** [`betta_pair.webp`](./assets/media/img/betta_pair.webp)
 * **Fuente:** [Unsplash - nCz_ZgnbtaE](https://unsplash.com/es/fotos/dos-peces-luchadores-siameses-nCz_ZgnbtaE)
 * **Autor:** Worachat Sodsri
 * **Licencia:** [Licencia Unsplash](https://unsplash.com/es/licencia) (Libre de uso comercial y no comercial)
 
 ### Fotografía 2: Betta con aletas rojo y azul
 
-* **Archivo original:** [`kyaw-tun-tp5sz33nBcg-unsplash.jpg`](./media-bruto/img/kyaw-tun-tp5sz33nBcg-unsplash.jpg)
-* **Archivo optimizado:** [`betta_red_blue.webp`](./src/media/img/betta_red_blue.webp)
+* **Archivo original:** [`kyaw-tun-tp5sz33nBcg-unsplash.jpg`](./media_bruto/img/kyaw-tun-tp5sz33nBcg-unsplash.jpg)
+* **Archivo optimizado:** [`betta_red_blue.webp`](./assets/media/img/betta_red_blue.webp)
 * **Fuente:** [Unsplash - tp5sz33nBcg](https://unsplash.com/es/fotos/betta-con-aletas-rojo-azul-tp5sz33nBcg)
 * **Autor:** Kyaw Tun
 * **Licencia:** [Licencia Unsplash](https://unsplash.com/es/licencia) (Libre de uso comercial y no comercial)
@@ -41,7 +41,7 @@ Este documento recoge la auditoría legal, técnica y de atribución de todos lo
 ### Fotografía 3: Betta rojo en acuario
 
 * **Archivo original:** [`pavel-gromov-MOVsVG2j1t8-unsplash.jpg`](./media-bruto/img/pavel-gromov-MOVsVG2j1t8-unsplash.jpg)
-* **Archivo optimizado:** [`betta_red_cristal.webp`](./src/media/img/betta_red_cristal.webp)
+* **Archivo optimizado:** [`betta_red_cristal.webp`](./assets/media/img/betta_red_cristal.webp)
 * **Fuente:** [Unsplash - MOVsVG2j1t8](https://unsplash.com/es/fotos/betta-rojo-en-acuario-MOVsVG2j1t8)
 * **Autor:** Pavel Gromov
 * **Licencia:** [Licencia Unsplash](https://unsplash.com/es/licencia) (Libre de uso comercial y no comercial)
@@ -50,7 +50,7 @@ Este documento recoge la auditoría legal, técnica y de atribución de todos lo
 
 ## 4. Gráficos Vectoriales (SVG)
 
-* **Nombre de archivo:** [`fish-svgrepo-com.svg`](./src/media/img/fish-svgrepo-com.svg)
+* **Nombre de archivo:** [`fish-svgrepo-com.svg`](./assets/media/img/fish-svgrepo-com.svg)
 * **Fuente:** [SVG Repo - Fish SVG Vector 159](https://www.svgrepo.com/svg/78378/fish)
 * **Autor:** SVG Repo - Sea Life Collection
 * **Licencia:** [Creative Commons 0 (CC0 License)](https://www.svgrepo.com/page/licensing/#CC0)
