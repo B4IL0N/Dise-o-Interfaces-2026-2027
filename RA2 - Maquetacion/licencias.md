@@ -24,7 +24,7 @@ Este documento recoge la auditoría legal, técnica y de atribución de todos lo
 
 ### Fotografía 1: Dos peces betta siameses
 
-* **Archivo original:** [`worachat-sodsri-nCz_ZgnbtaE-unsplash.jpg`](./media_bruto/img/worachat-sodsri-nCz_ZgnbtaE-unsplash.jpg)
+* **Archivo original:** [`worachat-sodsri-0X_kRW8Cj0k-unsplash.jpg`](./media_bruto/img/worachat-sodsri-0X_kRW8Cj0k-unsplash.jpg)
 * **Archivo optimizado:** [`betta_pair.webp`](./assets/media/img/betta_pair.webp)
 * **Fuente:** [Unsplash - nCz_ZgnbtaE](https://unsplash.com/es/fotos/dos-peces-luchadores-siameses-nCz_ZgnbtaE)
 * **Autor:** Worachat Sodsri
