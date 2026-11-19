@@ -40,7 +40,7 @@ Este documento recoge la auditoría legal, técnica y de atribución de todos lo
 
 ### Fotografía 3: Betta rojo en acuario
 
-* **Archivo original:** [`pavel-gromov-MOVsVG2j1t8-unsplash.jpg`](./media-bruto/img/pavel-gromov-MOVsVG2j1t8-unsplash.jpg)
+* **Archivo original:** [`pavel-gromov-MOVsVG2j1t8-unsplash.jpg`](./media_bruto/img/pavel-gromov-MOVsVG2j1t8-unsplash.jpg)
 * **Archivo optimizado:** [`betta_red_cristal.webp`](./assets/media/img/betta_red_cristal.webp)
 * **Fuente:** [Unsplash - MOVsVG2j1t8](https://unsplash.com/es/fotos/betta-rojo-en-acuario-MOVsVG2j1t8)
 * **Autor:** Pavel Gromov
